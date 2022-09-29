@@ -1,0 +1,50 @@
+========== Part 1 ============================================================
+
+Take a moment to examine the Prime class that has been provided to you. Note 
+that the NUMBERS array contains the first 1000 prime numbers.
+
+Create a new Java class named "ModThread" and use your preferred method to make
+it a thread. Define a field for an integer v and an initializing constructor.
+
+When your thread is started, it should print all of the integers between 1 and 
+1000 (inclusive) that are evenly divisible by v.
+
+Define a main method that creates and starts one of your threads for each of 
+the first 10 primes. Note that the output example below is truncated for space.
+
+3: 3
+19: 19
+17: 17
+13: 13
+11: 11
+7: 7
+2: 2
+5: 5
+29: 29
+23: 23
+3: 6
+19: 38
+13: 26
+17: 34
+11: 22
+7: 14
+23: 46
+2: 4
+29: 58
+5: 10
+3: 9
+13: 39
+17: 51
+11: 33
+23: 69
+2: 6
+29: 87
+7: 21
+19: 57
+5: 15
+13: 52
+17: 68
+...<truncated>...
+2: 996
+2: 998
+2: 1000
