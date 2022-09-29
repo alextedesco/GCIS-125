@@ -1,0 +1,33 @@
+Note: This problem is meant to be solved using TCP/IP Networking.
+
+Create a new Java class named "SumClient" in this package. Define a main method
+with the appropriate signature. Your main method should do the following 
+EXACTLY ONCE (do not loop):
+
+* Prompt the user to enter an integer value.
+* Open a TCP/IP connection to the local computer on port 54123.
+* Send the integer value to the server.
+* Read the response from the server (also an integer) and print it out. The 
+  value should be the total sum of all integers sent to the server by any 
+  clients that have connected.
+* Do not forget to close any resources that you have opened.
+* If an exception occurs, throw it and end the program.
+
+The example output below shows running FOUR DIFFERENT clients:
+
+enter an integer: 12345
+current total sum is: 12345
+Goodbye!
+
+enter an integer: 23456
+current total sum is: 35801
+Goodbye!
+
+enter an integer: 10010001
+current total sum is: 10045802
+Goodbye!
+
+enter an integer: -1000005
+current total sum is: 9045797
+Goodbye!
+
