@@ -1,0 +1,10 @@
+What is one new thing that you learned today?
+ - You can use .wait() and .notify() to change the current status of a thread
+
+What is one thing that you wish you knew more about as we move forward?
+ - If a deadlock is permanent and the only solution is stopping the program, does that imply
+ that when it occurs in large scale projects everything can be lost?
+
+What one question do you have about today’s class?
+ - When doing synchronized you can pass in either an object key or this. When is it
+ better to use one of the other.
