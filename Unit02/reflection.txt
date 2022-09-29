@@ -1,0 +1,11 @@
+What is one new thing that you learned today?
+ - I learned how classes interact wit each other through the use of observers and there purpose 
+ is to notify the class about any time an object is changed. For example if a card is flipped.
+
+What is one thing that you wish you knew more about as we move forward?
+ - I wish to learn more about using Vgrow and Hgrow to make boxes in a pane equal in size as opposed to
+ using the setMaxSize function.
+
+What one question do you have about today’s class?
+ - Do MediaPlayers apply to all media formats? Can all of what was done with the music player
+ be done the same with video files as well?
