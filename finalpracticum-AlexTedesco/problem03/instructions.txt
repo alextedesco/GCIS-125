@@ -1,0 +1,54 @@
+Note: This problem is meant to be solved using UDP Networking.
+
+Create a new Java class named "UDPSumServer" in this package.
+
+Define a main method with the appropriate signature. Your main method should 
+do the following:
+
+* Initialize an integer sum at 0.
+* Listen for incoming UDP packets on port 54125.
+* Repeat until the program is terminated:
+  * When a packet is received, read the string value from inside of it and 
+    convert it into an integer. Hint: use the Integer.parseInt(string) method.
+  * Add the integer value to the sum.
+  * Return the total sum (as a string) in a UDP packet addressed to the client. 
+    Hint: you can get the client's address and port from the packet you 
+    received from the client.
+* You may ignore any warnings related to closing the server - your program 
+  should run until it is terminated, e.g. using CTRL-C or closing the terminal
+  window.
+* If an exception occurs, throw it and end the program.
+
+Example output below shows ONE server receiving connections from FOUR different
+clients:
+
+Waiting for client...
+Client connected!
+  received: 12345
+  sum is now 12345
+  sending: 12345
+  client closed.
+
+Waiting for client...
+Client connected!
+  received: 23456
+  sum is now 35801
+  sending: 35801
+  client closed.
+
+Waiting for client...
+Client connected!
+  received: 10010001
+  sum is now 10045802
+  sending: 10045802
+  client closed.
+
+Waiting for client...
+Client connected!
+  received: -1000005
+  sum is now 9045797
+  sending: 9045797
+  client closed.
+
+Waiting for client...
+
