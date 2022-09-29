@@ -1,0 +1,29 @@
+This practicum has been divided into 4 parts. You will find the instructions 
+for each part in the appropriately named package. Carefully read the 
+instructions for each problem before attempting it. You may attempt the 
+problems in any order, but you may find it easiest to attempt them in order.
+
+The scoring for this exam will work a little differently than usual. Your 
+grader will first compute your grade for each individual problem as a 
+percentage using the standard grading rubric. You will then be awarded points
+according to the following formula:
+
+40 * highest +
+30 * second highest +
+20 * third highest +
+10 * lowest
+
+In other words, the higher your score on any individual question, the more 
+points that question will be worth.
+
+For example, let's say you get the following percentage grades for each 
+question:
+
+1: 95%
+2: 100%
+3: 50%
+4: 80%
+
+Your final grade on the exam would be:
+
+(40 * 1.0) + (30 * 0.95) + (20 * 0.80) + (10 * 0.5) = 89.5
