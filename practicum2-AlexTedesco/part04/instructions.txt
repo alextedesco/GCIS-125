@@ -1,0 +1,31 @@
+========== Part 4 ============================================================
+
+Take a moment to examine the Prime class that has been provided to you. Note 
+that the NUMBERS array contains the first 1000 prime numbers.
+
+Define a new Java class named "PrimeOrder" and use your preferred method to 
+make it a thread. Define fields for an index and a list of integers as well as 
+an initializing constructor. 
+
+When your thread is started, it should add the value in Prime.NUMBERS that 
+corresponds to its index. You must use wait and notify/notifyAll to make sure
+that the prime numbers are added to the list in ascending order. To be clear, 
+each thread should wait until all of the preceding prime numbers have been 
+added to the list before adding its own.
+
+Hint: a thread should not add its prime number to the list until the size of 
+the list is equal to it's index.
+
+Define a main method with the appropriate signature and use it to create and 
+start 100 of your threads. The main method should wait until all of the threads
+have finished before printing the list of primes to standard output. To receive
+full credit, your threads must run CONCURRENTLY, not sequentially.
+
+Example output:
+
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 
+73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157,
+163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241,
+251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347,
+349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439,
+443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541]
