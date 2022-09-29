@@ -1,0 +1,9 @@
+What is one new thing that you learned today?
+ - I learned how you can use Thread.sleep() to control the wait time before code is executed
+
+What is one thing that you wish you knew more about as we move forward?
+ - I wish to learn more about when it is appropriate to make a class run single-threaded vs multi-threaded
+
+What one question do you have about today’s class?
+ - Even though .join() is the better option when using many threads, is there any cases where you would
+ have to use while (thread.isAlive())
