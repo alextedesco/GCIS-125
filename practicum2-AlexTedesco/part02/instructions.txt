@@ -1,0 +1,74 @@
+========== Part 2 ============================================================
+
+Take a moment to examine the Prime class that has been provided to you. Note 
+that the NUMBERS array contains the first 1000 prime numbers.
+
+Define a new Java class named PrimePrinter and use your preferred method to 
+make it into a thread. Add a field for an index and an initializing 
+constructor. When your thread is started, it should print the value at the 
+specified index in NUMBERS. You should use sleep to try and make sure that the
+numbers print in ascending order.
+
+Define a main method with the appropriate signature. Use it to create and
+start 50 of your threads. Use join to make sure that the main method waits 
+until all of the threads have finished before printing a message. 
+
+For full credit you MUST make sure that the threads are running concurrently 
+(and not sequentially). Hint: DO NOT use join inside the same loop that you are
+using to create and start your threads! 
+
+Note that it is impossible to guarantee that the threads will print in the 
+correct order using only sleeps.  Here is some example output:
+
+2
+3
+5
+7
+11
+13
+13
+19
+17
+23
+29
+31
+37
+43
+41
+47
+53
+59
+61
+67
+71
+73
+83
+79
+89
+97
+101
+103
+109
+107
+113
+131
+127
+137
+149
+139
+151
+157
+163
+173
+167
+179
+181
+191
+193
+197
+199
+211
+223
+227
+229
+Done!
