@@ -1,0 +1,52 @@
+Note: This problem is meant to be solved using TCP/IP Networking.
+
+Create a new Java class named "SumServer" in this package.
+
+Define a main method with the appropriate signature. Your main method should 
+do the following:
+
+* Initialize an integer sum at 0.
+* Listen for incoming TCP/IP connections on port 54123.
+* Repeat until the program is terminated:
+  * When a client connects, read an integer value from the socket.
+  * Add the integer value to the sum.
+  * Return the total sum to the client.
+  * Close the connection to the client.
+* You may ignore any warnings related to closing the server - your program 
+  should run until it is terminated, e.g. using CTRL-C or closing the terminal
+  window.
+* If an exception occurs, throw it and end the program.
+
+Example output below shows ONE server receiving connections from FOUR different
+clients:
+
+Waiting for client...
+Client connected!
+  received: 12345
+  sum is now 12345
+  sending: 12345
+  client closed.
+
+Waiting for client...
+Client connected!
+  received: 23456
+  sum is now 35801
+  sending: 35801
+  client closed.
+
+Waiting for client...
+Client connected!
+  received: 10010001
+  sum is now 10045802
+  sending: 10045802
+  client closed.
+
+Waiting for client...
+Client connected!
+  received: -1000005
+  sum is now 9045797
+  sending: 9045797
+  client closed.
+
+Waiting for client...
+
