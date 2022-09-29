@@ -1,0 +1,12 @@
+What is one new thing that you learned today?
+ - You can use InputStream and OutputStreams with Scanners and PrintWriters to communicate to servers.
+
+What is one thing that you wish you knew more about as we move forward?
+ - What are all the alternatives to the PrintWriter. On Homework 5.1 it was encouraged not to use a PrintWriter as it
+ adds characters to the string. I used a PrintStream since it has the same implemented methods as a PrintWriter.
+
+What one question do you have about today’s class?
+ "The port is a positive number between 1 and 65,535. Many ports are in use by the operating system or
+ are reserved (most of the ports below 1500)"
+
+ - If this is the case how do you determine which port to use for your sockets?
