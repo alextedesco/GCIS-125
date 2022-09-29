@@ -1,0 +1,125 @@
+For this practicum you will write several, small JavaFX applications. Each 
+should be in a class named exactly as instructed. Each class should be located 
+in the "practicum" package.
+
+Tips (SERIOUSLY READ THESE):
+* For each problem, begin by copying the provided JavaFX template.
+* When you import a class, make sure it is the JavaFX version of the class! For
+  example, one very common error is accidentally importing the java.awt.Color
+  class instead of the javafx.scene.paint.Color class. Check your imports!
+* Consider that there are 4 problems. Do not spend all of your time on the 
+  first 1-2. You will get the most credit on each problem for writing an 
+  application that looks correct and does not crash or produce any errors when 
+  launched. 
+* To maximize your score, you may consider implementing an application that 
+  looks correct for each problem, and then circling back to fill in any missing
+  functionality.
+
+
+========== Part 0 (0 points) ==================================================
+
+Before doing anything else, add the JavaFX reference libraries to your project
+and verify that you are able to run the provided JavaFXBoilerplate class.
+
+
+========== Part 1 (30 points) =================================================
+Take a moment to look at the custom_label.png screenshot that has been provided
+to you. It shows a simple JavaFX application with a highly customized label.
+
+In the "practicum" package, write a new JavaFX application in a class called 
+"CustomLabel" that displays a label that includes the text of your choice and at
+least three different customizations. You may choose from the following list 
+(each counts as ONE (1) customization):
+
+- Font (including size and color)
+- Border
+- Background Color
+- Positioning & padding
+- A Graphic
+
+You do not need to match the provided screenshot, but your label MUST fill in 
+any available space in the window, i.e. there should not be any empty/white 
+space visible in the window.
+
+
+========== Part 2 (30 points) =================================================
+
+Take a moment to look at the counter.png screenshot that has been 
+provided to you. It shows a simple JavaFX application with a label and a button.
+Each time the button is clicked, the number on the label is incremented.
+
+In the "practicum" package, write a new JavaFX application in a class called 
+"ClickCounter" that includes a label and a button. Implement an event handler 
+such that, each time the button is clicked, the number on the label is 
+incremented.
+
+You may receive up to 95% credit for an application that meets the above 
+requirements. For full credit you should match the layout in the provided image
+as closely as possible (do not worry about specific colors or fonts - you may 
+choose your own). 
+
+
+========== Part 3 (30 points) ==========
+
+Take a moment to look at the colors.png screenshot that has been provided to 
+you. It shows a JavaFX application in 4 different states (clockwise from top
+left):
+
+1. When first launched
+2. After the "R" button has been pressed.
+3. After the "G" button has been pressed.
+4. After the "B" button has been pressed.
+
+Your goal is to write a JavaFX application in a class called "Colors" that 
+matches the layout shown and changes the color of the control at the top each 
+time one of the buttons is pressed, e.g. to red when the "R" button is pressed,
+green when the "G" button is pressed, and blue when the "B" button is pressed.
+
+Tips:
+* You may choose any colors you like - you do not need to use red, green, and
+  blue.
+* When the application starts, the color of the top control may be any color
+  you'd like that is NOT one of the colors associated with a button.
+
+You may receive up to 95% credit for an application that meets the above 
+requirements. For full credit you should match the layout in the provided image
+as closely as possible (do not worry about specific colors or fonts - you may 
+choose your own).
+
+========== Part 4 (10 points) ==========
+
+Take a moment to run the DieView application that has been provided to you in
+the "dice" package. Not that it displays a JavaFX GUI with an ImageView 
+depicting one side of a six-sided die, and a button labeled "Roll!". When you
+click the button, nothing happens. Time to fix that!
+
+FOR THIS PROBLEM ONLY any new code you write should be added to the "dice" 
+package.
+
+Start by examining the Die class. It is a straightforward implementation of a
+6-sided die. Whenever the roll method is called, it will generate a random value
+from 1 to 6 (inclusive).
+
+Note the "setOnRoll" method, which allows a DieObserver to register to be 
+notified whenever the die is rolled. Examine the DieObserver interface and its
+single method: dieRolled. IF a DieObserver registers with a die, then this 
+method will be called whenever the die is rolled.
+
+Finally, examine the DieView class, a partial implementation of a die-rolling
+simulator. Note that it creates a new Die, ImageView, and Button. When launched,
+you will see the initial value on the face of the die (this should be random 
+every time that the application is launched).
+
+Your tasks are as follows (look for the STUDENT comments in DieView):
+
+1. Implement a DieObserver and register it with the Die such that, whenever the
+   die is rolled, it calls the "dieRolled" method on the DieView.
+
+2. Implement an event handler and register it with the rollButton such that,
+   whenever the button is pressed, the die is rolled.
+
+When you are finished, you should note that the image displayed changes whenever
+you click the "Roll!" button*.
+
+* Well, most of the time. It is possible to roll the same value 2 or more times
+in a row, after all.
